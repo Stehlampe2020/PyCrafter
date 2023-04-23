@@ -20,4 +20,6 @@ class PyCrafterConnHandler(socketserver.BaseRequestHandler):
 
 if __name__ == '__main__':
     game = PyCrafterServer()
-    with socketserver.ThreadingUDPServer(('0.0.0.0', 16382), PyCrafterConnHandler) as server: server.serve_forever()
+    addr = ('0.0.0.0', 16382)
+    print(f'Server listening on {addr[0]}:{addr[1]}')
+    with socketserver.ThreadingUDPServer(addr, PyCrafterConnHandler) as server: server.serve_forever()

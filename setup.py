@@ -9,5 +9,5 @@ setup(name='PyCrafter',
       author='Christian Lampe',
       author_email='kontakt@lampe2020.de',
       url='https://www.lampe2020.de/extras/spiele/pycrafter',
-      packages=['pygame', 'moderngl', 'numpy'],
+      packages=['pygame', 'moderngl', 'numpy', 'PyGLM', 'pywavefront'],
      )
